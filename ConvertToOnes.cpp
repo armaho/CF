@@ -29,7 +29,9 @@ int main() {
     if (numberOfZeroParts == 0) {
         cout << 0;
     } else {
-        cout << ((numberOfZeroParts - 1) * min(reverseCost, notCost)) + notCost;
+        cout << ((long long)(numberOfZeroParts - 1) *
+                 min(reverseCost, notCost)) +
+                    notCost;
     }
 
     cout << '\n';
